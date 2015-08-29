@@ -109,7 +109,8 @@ public class SoundController : MonoBehaviour {
 			"drop"
 		};
 
-		Play(bSnd[(int)Random.Range(0, bSnd.Length)], 1f, 1f);
+		//Play(bSnd[(int)Random.Range(0, bSnd.Length)], 1f, 1f);
+		Play("drop", 1f, 1f);
 	}
 
 	//Play music clip
