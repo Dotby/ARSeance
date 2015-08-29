@@ -7,6 +7,23 @@ public class VirtualButtonTracker : MonoBehaviour, IVirtualButtonEventHandler
 	public ParticleSystem candleFire;
 	public float startTime = 0f;
 	Color normalColor;
+	Color[] colors = new Color[]{
+		Color.black, 
+		Color.blue, 
+		Color.cyan, 
+		Color.gray, 
+		Color.green, 
+		Color.grey, 
+		Color.magenta, 
+		Color.red, 
+		Color.white, 
+		Color.black, 
+		Color.blue, 
+		Color.cyan
+	};
+
+	public SymbolsCombinationsController _comboControl;
+
 	/// <summary>
 	/// Called when the scene is loaded
 	/// </summary>
@@ -16,9 +33,10 @@ public class VirtualButtonTracker : MonoBehaviour, IVirtualButtonEventHandler
 		
 		VirtualButtonBehaviour[] vbs = GetComponentsInChildren<VirtualButtonBehaviour>();
 		for (int i = 0; i < vbs.Length; ++i) {
-			Debug.Log("Register vbutton.");
+			//Debug.Log("Register vbutton.");
 			// Register with the virtual buttons TrackableBehaviour
 			vbs[i].RegisterEventHandler(this);
+			vbs[i].id = i;
 		}
 	}
 
@@ -26,6 +44,7 @@ public class VirtualButtonTracker : MonoBehaviour, IVirtualButtonEventHandler
 	/// Called when the virtual button has just been pressed:
 	/// </summary>
 	public void OnButtonPressed( VirtualButtonAbstractBehaviour vb) {
+
 	//	if (pViewer == null) {return;}
 		switch(vb.VirtualButtonName) {
 		case "b1":
@@ -41,7 +60,9 @@ public class VirtualButtonTracker : MonoBehaviour, IVirtualButtonEventHandler
 		}
 
 		Debug.Log(vb.VirtualButtonName);
-		candleFire.startColor = Color.red;;
+		candleFire.startColor = colors[vb.gameObject.GetComponent<VirtualButtonBehaviour>().id];
+		_comboControl.AddToStack(vb.gameObject.GetComponent<VirtualButtonBehaviour>().id);
+
 	}
 
 	/// <summary>
@@ -49,7 +70,9 @@ public class VirtualButtonTracker : MonoBehaviour, IVirtualButtonEventHandler
 	/// </summary>
 	public void OnButtonReleased(VirtualButtonAbstractBehaviour vb) {
 
-		candleFire.startColor = normalColor;
+		_comboControl.WaitAndTry();
+
+		//candleFire.startColor = normalColor;
 
 		if (vb.VirtualButtonName == "center"){
 			//pViewer.VButton(1);

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 934cbe12f554bd3449ffc9f953027678
+timeCreated: 1440876578
+licenseType: Free
+Transform:
+  objectHideFlags: 61
+  prefabParentObject: {instanceID: 0}
+  prefabInternal: {instanceID: 0}
+  gameObject: {instanceID: 0}
+  localRotation: {x: 0, y: 0, z: 0, w: 1}
+  localPosition: {x: 0, y: 0, z: 0}
+  localScale: {x: 1, y: 1, z: 1}
+  children: []
+  father: {instanceID: 0}
+  rootOrder: 0

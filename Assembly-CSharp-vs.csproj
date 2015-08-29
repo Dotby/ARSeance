@@ -75,6 +75,7 @@
      <Compile Include="Assets\Reporter\Test\Rotate.cs" />
      <Compile Include="Assets\Reporter\Test\TestReporter.cs" />
      <Compile Include="Assets\Scripts\SoundController.cs" />
+     <Compile Include="Assets\Scripts\SymbolsCombinationsController.cs" />
      <Compile Include="Assets\Scripts\VirtualButtonTracker.cs" />
      <Compile Include="Assets\Vuforia\Scripts\BackgroundPlaneBehaviour.cs" />
      <Compile Include="Assets\Vuforia\Scripts\CloudRecoBehaviour.cs" />

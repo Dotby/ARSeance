@@ -101,6 +101,17 @@ public class SoundController : MonoBehaviour {
 		}
 	}
 
+	public void PlayRandomButton(){
+		string[] bSnd = new string[]{
+			"wosh",
+			"smite",
+			"ergh",
+			"drop"
+		};
+
+		Play(bSnd[(int)Random.Range(0, bSnd.Length)], 1f, 1f);
+	}
+
 	//Play music clip
 	public void PlayMusic (string sndName, float volume, float pitch, bool fade) {
 		if(!fade)_musicChannels[_musicChannel].volume = 0f;

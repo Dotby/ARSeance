@@ -18,6 +18,6 @@ namespace Vuforia
     /// </summary>
     public class VirtualButtonBehaviour : VirtualButtonAbstractBehaviour
     {
-
+		public int id;
     }
 }
