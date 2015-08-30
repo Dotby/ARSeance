@@ -23,9 +23,9 @@ public class JoystickControl : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-//		if(pointer == null){
-//			pointer = GameObject.Find("EventSystem").GetComponent<GazeInputModule>();
-//		}
+		if(pointer == null){
+			pointer = GameObject.Find("EventSystem").GetComponent<GazeInputModule>();
+		}
 	}
 
 	IEnumerator CheckForControllers()
@@ -47,18 +47,18 @@ public class JoystickControl : MonoBehaviour {
 		}
 	}
 
-//	public void PointerEnter(){
-//		AudioSource.PlayClipAtPoint(enterSnd, Vector3.zero);
-//	}
-//
-//	public void PointerClick(){
-//		AudioSource.PlayClipAtPoint(clickSnd, Vector3.zero);
-//	}
+	public void PointerEnter(){
+		//AudioSource.PlayClipAtPoint(enterSnd, Vector3.zero);
+	}
 
-//	public void ClickBut(int but){
-//		PointerClick();
-//		Debug.Log("Click button: " + but);
-//	}
+	public void PointerClick(){
+		//AudioSource.PlayClipAtPoint(clickSnd, Vector3.zero);
+	}
+
+	public void ClickBut(int but){
+		PointerClick();
+		Debug.Log("Click button: " + but);
+	}
 	
 	// Update is called once per frame
 	void Update () {
@@ -69,9 +69,9 @@ public class JoystickControl : MonoBehaviour {
 		Debug.Log("But2: " + Input.GetButton("Fire3"));
 		Debug.Log("But3: " + Input.GetButton("Jump"));
 
-//		if (Input.GetButton("Fire3")){
-//			pointer.EmulateClick();
-//		}
+		if (Input.GetButton("Fire3")){
+			pointer.EmulateClick();
+		}
 
 		if (model != null){
 
