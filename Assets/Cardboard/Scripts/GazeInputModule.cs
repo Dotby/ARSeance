@@ -135,10 +135,31 @@ public class GazeInputModule : BaseInputModule {
     }
   }
 
+
+  public void EmulateClick(){
+		Debug.Log("EClick");
+		GameObject go = pointerData.pointerCurrentRaycast.gameObject;
+		
+		// Send pointer down event.
+		pointerData.pressPosition = pointerData.position;
+		pointerData.pointerPressRaycast = pointerData.pointerCurrentRaycast;
+		pointerData.pointerPress =
+			ExecuteEvents.ExecuteHierarchy(go, pointerData, ExecuteEvents.pointerDownHandler)
+				?? ExecuteEvents.GetEventHandler<IPointerClickHandler>(go);
+		
+		// Save the pending click state.
+		pointerData.rawPointerPress = go;
+		pointerData.eligibleForClick = true;
+		pointerData.clickCount = 1;
+		pointerData.clickTime = Time.unscaledTime;
+  }
+
   private void HandlePendingClick() {
+
     if (!pointerData.eligibleForClick) {
       return;
     }
+
     bool triggerStillDown = !Cardboard.SDK.Triggered
         && Time.unscaledTime - pointerData.clickTime < clickTime;
     if (!Cardboard.SDK.TapIsTrigger) {
@@ -160,12 +181,15 @@ public class GazeInputModule : BaseInputModule {
     pointerData.clickCount = 0;
   }
 
-  private void HandleTrigger() {
+  public void HandleTrigger() {
+	
     bool triggered = Cardboard.SDK.Triggered
         || !Cardboard.SDK.TapIsTrigger && Input.GetMouseButtonDown(0);
     if (!triggered) {
       return;
     }
+
+
     var go = pointerData.pointerCurrentRaycast.gameObject;
 
     // Send pointer down event.

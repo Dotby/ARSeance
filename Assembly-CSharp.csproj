@@ -86,6 +86,7 @@
      <Compile Include="Assets\Reporter\ReporterMessageReceiver.cs" />
      <Compile Include="Assets\Reporter\Test\Rotate.cs" />
      <Compile Include="Assets\Reporter\Test\TestReporter.cs" />
+     <Compile Include="Assets\Scripts\JoystickControl.cs" />
      <Compile Include="Assets\Scripts\SoundController.cs" />
      <Compile Include="Assets\Scripts\SymbolsCombinationsController.cs" />
      <Compile Include="Assets\Scripts\VirtualButtonTracker.cs" />
