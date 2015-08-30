@@ -49,19 +49,19 @@ public class JoystickControl : MonoBehaviour {
 
 	public void PointerEnter(int vec){
 		if (vec == 0){
-			TranslateHOR(0.1f);
+			TranslateHOR(0.5f);
 		}
 
 		if (vec == 1){
-			TranslateHOR(-0.1f);
+			TranslateHOR(-0.5f);
 		}
 
 		if (vec == 2){
-			TranslateVER(0.1f);
+			TranslateVER(0.5f);
 		}
 
 		if (vec == 3){
-			TranslateVER(-0.1f);
+			TranslateVER(-0.5f);
 		}
 	}
 
