@@ -83,6 +83,7 @@ namespace Vuforia
                 component.enabled = true;
             }
 
+			Cardboard.SDK.Recenter();
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
         }
 
