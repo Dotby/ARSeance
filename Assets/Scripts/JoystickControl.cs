@@ -47,14 +47,36 @@ public class JoystickControl : MonoBehaviour {
 		}
 	}
 
-	public void PointerEnter(){
-		//AudioSource.PlayClipAtPoint(enterSnd, Vector3.zero);
+	public void PointerEnter(int vec){
+		if (vec == 0){
+			TranslateHOR(0.1f);
+		}
+
+		if (vec == 1){
+			TranslateHOR(-0.1f);
+		}
+
+		if (vec == 2){
+			TranslateVER(0.1f);
+		}
+
+		if (vec == 3){
+			TranslateVER(-0.1f);
+		}
 	}
 
 	public void PointerClick(){
 		//AudioSource.PlayClipAtPoint(clickSnd, Vector3.zero);
 	}
 
+	public void TranslateVER(float power){
+		model.transform.Translate(0f, 0f, power);
+	}
+
+	public void TranslateHOR(float power){
+		model.transform.Translate(0f, power, 0f);
+	}
+	
 	public void ClickBut(int but){
 		PointerClick();
 		Debug.Log("Click button: " + but);
