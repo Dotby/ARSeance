@@ -48,6 +48,8 @@ public class VirtualButtonTracker : MonoBehaviour, IVirtualButtonEventHandler
 	//	if (pViewer == null) {return;}
 		switch(vb.VirtualButtonName) {
 		case "b1":
+			Debug.Log("recenter");
+			Cardboard.SDK.Recenter();
 			break;
 		case "b2":
 			break;

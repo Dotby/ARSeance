@@ -4,7 +4,7 @@
     <Files>
       <File FileName="Assets\Scripts\VirtualButtonTracker.cs" Line="60" Column="4" />
       <File FileName="Assets\Vuforia\Scripts\VirtualButtonBehaviour.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\SymbolsCombinationsController.cs" Line="41" Column="13" />
+      <File FileName="Assets\Scripts\SymbolsCombinationsController.cs" Line="171" Column="40" />
       <File FileName="Assets\Scripts\SoundController.cs" Line="47" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
