@@ -59,6 +59,7 @@
      <None Include="Assets\license_3rdpartynotice.txt" />
      <None Include="Assets\link.xml" />
      <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
+     <None Include="Assets\StreamingAssets\QCAR\ARSeance 3.xml" />
      <None Include="Assets\Vuforia\Shaders\RenderVideoBackground.shader" />
      <None Include="Assets\CharacterFX\Shaders\StatueBmp.shader" />
      <None Include="Assets\StreamingAssets\QCAR\War.xml" />
@@ -75,6 +76,7 @@
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
      <None Include="Assets\FX Mega Pack\FX Mega Pack - Readme.txt" />
      <None Include="Assets\CharacterFX\Shaders\CharShaderbump.shader" />
+     <None Include="Assets\StreamingAssets\QCAR\ARSeance 2.xml" />
      <None Include="Assets\StreamingAssets\QCAR\ARSeance 1.xml" />
      <None Include="Assets\CharacterFX\Shaders\CharShader.shader" />
      <None Include="Assets\Plugins\Legacy\Android\AndroidManifest.xml" />

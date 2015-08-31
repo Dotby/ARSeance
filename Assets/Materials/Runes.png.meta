@@ -1,0 +1,188 @@
+fileFormatVersion: 2
+guid: 566f93c05b8cbb84ab635476616c4e3e
+timeCreated: 1440979167
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Runes_0
+    21300002: Runes_1
+    21300004: Runes_2
+    21300006: Runes_3
+    21300008: Runes_4
+    21300010: Runes_5
+    21300012: Runes_6
+    21300014: Runes_8
+    21300016: Runes_7
+    21300018: Runes_6
+    21300020: Runes_9
+    21300022: Runes_10
+    21300024: Runes_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Runes_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 232
+        width: 138
+        height: 221
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Runes_1
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 251
+        width: 162
+        height: 157
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Runes_2
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 245
+        width: 145
+        height: 172
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Runes_3
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 242
+        width: 114
+        height: 194
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Runes_4
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 245
+        width: 141
+        height: 181
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Runes_5
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 231
+        width: 137
+        height: 203
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Runes_8
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 14
+        width: 123
+        height: 198
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Runes_7
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 29
+        width: 165
+        height: 166
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Runes_6
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 26
+        width: 124
+        height: 173
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Runes_9
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 29
+        width: 156
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Runes_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 43
+        width: 160
+        height: 129
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Runes_11
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 44
+        width: 150
+        height: 145
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,11 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class SymbolsCombinationsController : MonoBehaviour {
 
 	const int _maxStack = 4;
 	List<int> _stack = new List<int>();
+
+	public Sprite[] runes;
+	public Image runeSprite;
 	
 	List<int[]> _combos4 = new List<int[]>();
 	List<int[]> _combos3 = new List<int[]>();
@@ -73,6 +77,7 @@ public class SymbolsCombinationsController : MonoBehaviour {
 		ghostSpace.SetActive(false);
 
 		SoundController.instance.PlayRandomButton();
+		runeSprite.sprite = runes[_id];
 		runeObj.Play("runeUp");
 
 		_stack.Add(_id);
